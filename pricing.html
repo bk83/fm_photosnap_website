@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/pricing.css">
+  <script src="assets/js/common.js" type="module"></script>
+  <script src="assets/js/pricing.js" type="module"></script>
+  <script src="assets/component/header.js" type="text/javascript" defer></script>
+  <script src="assets/component/footer.js" type="text/javascript" defer></script>
+
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <main>
+    <!-- TOP -->
+    <section class="section-top">
+      <div class="section-top__flex-container">
+        <div class="section-top__flex-container__image">
+          <img class="responsive-image" src="assets/images/pricing/mobile/hero.jpg" alt="hero-image">
+        </div>
+        <div class="section-top__flex-container__body">
+          <div class="section-top__flex-container__body__text-wrapper">
+            <h2 class="large">Pricing</h2>
+            <p class="section-top__flex-container__body__text-wrapper__description">
+              Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple
+              way to create and share your photos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRICE -->
+    <div class="section-price">
+      <div class="switch-container">
+        <span class="term-option monthly checked">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-switch" />
+          <span class="slider round"></span>
+        </label>
+        <span class="term-option yearly">Yearly</span>
+      </div>
+      <div id="section-price__price-area" class="section-price__price-list"></div>
+    </div>
+    <!-- COMPARISON -->
+    <section class="section-comparison">
+      <h2>Compare</h2>
+      <div class="plan-comparison-table">
+        <div class="table-row">
+          <div class="table-header">The Features</div>
+          <div class="table-header">Basic</div>
+          <div class="table-header">Pro</div>
+          <div class="table-header">Business</div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Unlimited Story Posting</div>
+          <div class="table-cell include"></div>
+          <div class="table-cell include"></div>
+          <div class="table-cell include"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Unlimited Photo Upload</div>
+          <div class="table-cell include"></div>
+          <div class="table-cell include"></div>
+          <div class="table-cell include"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Embedding Custom Content</div>
+          <div class="table-cell"></div>
+          <div class="table-cell include"></div>
+          <div class="table-cell include"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Customize Metadata</div>
+          <div class="table-cell"></div>
+          <div class="table-cell include"></div>
+          <div class="table-cell include"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Advanced Metrics</div>
+          <div class="table-cell"></div>
+          <div class="table-cell"></div>
+          <div class="table-cell include"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Photo Downloads</div>
+          <div class="table-cell"></div>
+          <div class="table-cell"></div>
+          <div class="table-cell include"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Search Engine Indexing</div>
+          <div class="table-cell"></div>
+          <div class="table-cell"></div>
+          <div class="table-cell include"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-header">Custom Analytics</div>
+          <div class="table-cell"></div>
+          <div class="table-cell"></div>
+          <div class="table-cell include"></div>
+        </div>
+      </div>
+    </section>
+    <!-- PROMOTION -->
+    <section class="section-promotion">
+      <div class="section-promotion__container">
+        <div class="section-promotion__container__text-wrapper">
+          <h2 class="large">We're in Beta.<br>
+            Get your invite today!</h2>
+          <div class="link-to-detail" link-to-detail>
+            <h4>Get an invite</h4>
+            <img src="assets/images/shared/desktop/arrow.svg" alt="arrow">
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer-component></footer-component>
+</body>
+
+</html>
