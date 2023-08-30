@@ -167,8 +167,12 @@ h4 {
   font-weight: 800;
   letter-spacing: 2.5px;
 }
-.header__nav .header__menu-icon {
+
+.header__menu-icon {
   padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body.menu-open {
@@ -479,6 +483,7 @@ body.menu-open {
   }
 }
 .section-promotion__container {
+  position: relative;
   background: url(../images/shared/mobile/bg-beta.jpg) no-repeat;
   background-size: cover;
   width: 100%;
@@ -499,6 +504,30 @@ body.menu-open {
 }
 .section-promotion__container .link-to-detail {
   max-width: 168px;
+}
+
+.section-promotion__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc((100% - 318px) / 2);
+  height: 6px;
+  width: 34.1333333333vw;
+  max-width: 128px;
+  background-image: linear-gradient(to top, #FFC593, #BC7198, #5A77FF);
+}
+@media (max-width: 374px) {
+  .section-promotion__container::after {
+    left: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .section-promotion__container::after {
+    width: 6px;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
 }
 
 @media (min-width: 768px) {

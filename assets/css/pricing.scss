@@ -518,10 +518,9 @@ $screen-price-card: 1170;
     }
 }
 
-
-
 // ............... // PROMOTOIN // ............... //
 .section-promotion__container {
+    position: relative;
     background: url(../images/shared/mobile/bg-beta.jpg) no-repeat;
     background-size: cover;
     width: 100%;
@@ -542,6 +541,28 @@ $screen-price-card: 1170;
         margin-bottom: 31px;
     }
 }
+
+// linear-gradient decoration
+.section-promotion__container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc((100% -  318px )/ 2);
+    height: 6px;
+    width: pxToVw(128);
+    max-width: 128px;
+    background-image: $linear-gradient;
+    @include max-width(374) {
+        left: 32px;
+    }
+    @include min-width($screen-tablet) {
+        width: 6px;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
 
 @include min-width($screen-tablet) {
     .section-promotion__container {
